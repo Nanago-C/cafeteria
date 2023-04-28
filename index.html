@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+
+body, html {
+  height: 100%;
+  font-family: Georgia, serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("banner.jpg");
+  min-height: 100%;
+}
+
+.menu {
+  display: none;
+}
+
+.card {
+    margin-left: 135px;
+    margin-top: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-brown">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-brown">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-brown">SOBRE</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-brown">CARDÁPIO</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-brown">ONDE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Aberto de 10:00 até as 19:30</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Stag<br>Coffee</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Rua Braz Bernardino, 211</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Sobre o Café</span></h5>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa blanditiis optio fugit temporibus incidunt quo illum dolor ad hic reiciendis, tenetur maiores quos! Dolorum consequatur veniam, corporis assumenda porro labore.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit veniam magnam blanditiis repudiandae, illo eos atque doloremque aspernatur quibusdam sed voluptate beatae voluptas aperiam magni nostrum quam facere dignissimos unde.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+      <p>Chef, Coffeeist and Owner: Alguém ai.</p>
+    </div>
+    <img src="backgroundimage.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Horário Aberto:</strong> Todo dia de 10:00 às 19:30</p>
+    <p><strong>Endereço:</strong> Rua Braz Bernardino, 211</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-container w3-brown">Cardápio</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Comida</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Bebida</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+        <div class="w3-card-4">
+            <img class="card" src="croque.jpg" alt="Alps">
+            <div class="w3-container w3-center">
+              <p>Croque R$28,90</p>
+        </div>
+        </div>
+        <div class="w3-card-4">
+            <img class="card" src="croquemadame.jpg" alt="Alps">
+            <div class="w3-container w3-center">
+              <p>Croque Madame R$31,90</p>
+        </div>
+        </div>
+        <div class="w3-card-4">
+            <img class="card" src="brownie.jpg" alt="Alps">
+            <div class="w3-container w3-center">
+              <p>Brownie R$8,00</p>
+            </div>
+        </div>
+        <div class="w3-card-4">
+            <img class="card" src="croque.jpg" alt="Alps">
+            <div class="w3-container w3-center">
+              <p>Brownie de Limão R$9,00</p>
+            </div>
+        </div>
+        <div class="w3-card-4">
+            <img class="card" src="waffle.jpg" alt="Alps">
+            <div class="w3-container w3-center">
+              <p>Waffle R$25,90</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+        <div class="w3-card-4">
+            <img class="card" src="aeropress.jpg" alt="Alps">
+            <div class="w3-container w3-center">
+              <p>Aeropress R$13,50</p>
+            </div>
+        </div>
+        <div class="w3-card-4">
+            <img class="card" src="syphon.jpg" alt="Alps">
+            <div class="w3-container w3-center">
+              <p>Sifão R$15,90</p>
+            </div>
+        </div>
+        <div class="w3-card-4">
+            <img class="card" src="koar.jpg" alt="Alps">
+            <div class="w3-container w3-center">
+              <p>Koar R$14,90</p>
+            </div>
+        </div>
+        <div class="w3-card-4">
+            <img class="card" src="clever.jpg" alt="Alps">
+            <div class="w3-container w3-center">
+              <p>Clever R$15,50</p>
+            </div>
+        </div>
+        <div class="w3-card-4">
+            <img class="card" src="v60.jpg" alt="Alps">
+            <div class="w3-container w3-center">
+              <p>V60 R$13,90</p>
+            </div>
+        </div>
+    </div>  
+    <img src="fora.jpg" style="width:50%; max-width:1000px;margin-top:32px; margin-left:180px">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Onde nos achar.</span></h5>
+    <p>Estamos localizados no endereço tal.</p>
+    <img src="dentro.jpg    " class="w3-image" style="width:100%">
+    <p><span class="w3-tag">AVISO!</span>Oferecemos serviço completo de catering para qualquer evento, grande ou pequeno. Entendemos suas necessidades e atenderemos a comida para satisfazer os maiores critérios de todos, tanto de aparência quanto de sabor.</p>
+    <p><strong>Reserve</strong> uma mesa, peça o especial de hoje ou simplesmente envie-nos uma mensagem:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nome" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Quantas pessoas" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mensagem \ Requisitos" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">ENVIAR MENSAGEM</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-pale-yellow", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-pale-yellow";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
